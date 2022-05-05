@@ -5,6 +5,6 @@
 
 <p align="center">
     <a href="https://laravel.com" target="_blank">
-        <img src="public\shop.PNG" width="400">
+        <!-- <img src="public\shop.PNG" width="400"> -->
     </a>
 </p>
