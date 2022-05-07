@@ -7,6 +7,7 @@
             <li><a href="#">👜 Orders</a></li>
             <li><a href="#">📊 Monitoring</a></li>
             <li><a href="#">♻️ Recycling</a></li>
+            <li><a href="#">Materials</a></li>
         </ul>
     </div>
     <div class="col-9 mt-5">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 a, li, ul {
     text-decoration: none !important;
     list-style: none;
@@ -11,4 +13,8 @@ a, li, ul {
     background: -webkit-linear-gradient(left,  #d4e4ef 0%,#86aecc 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  #d4e4ef 0%,#86aecc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=1 ); /* IE6-9 */
+}
+
+* {
+   font-family: 'Josefin Sans', sans-serif;
 }
