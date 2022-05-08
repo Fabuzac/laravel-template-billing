@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MaterialsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WoodController;
 use App\Http\Controllers\SteelController;
@@ -22,8 +23,10 @@ Auth::routes();
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/profile/{user}', [UserController::class, 'show'])->name('profile');
 
-Route::get('/wood', [WoodController::class, 'index'])->name('wood.index');
-Route::get('/wood/{name}', [WoodController::class, 'show'])->name('wood.show');
+Route::get('/materials', [MaterialsController::class, 'index'])->name('materials.index');
+
+Route::get('/materials/wood', [WoodController::class, 'index'])->name('wood.index');
+Route::get('/wood/{wood}', [WoodController::class, 'show'])->name('wood.show');
 
 Route::get('/steel', [SteelController::class, 'index'])->name('steel.index');
 Route::get('/steel/{name}', [SteelController::class, 'show'])->name('steel.show');

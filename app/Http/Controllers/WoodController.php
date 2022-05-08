@@ -9,10 +9,10 @@ class WoodController extends Controller
 {
     public function index()
     {
-        $wood = Wood::all();
+        $woods = Wood::all();
 
-        return view('wood.index', [
-            'wood' => $wood
+        return view('materials.wood.index', [
+            'woods' => $woods
         ]);
     }
 

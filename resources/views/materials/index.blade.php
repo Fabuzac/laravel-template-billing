@@ -6,28 +6,35 @@
     </a>    
     <div class="col-9 mt-5">
         <div class="card">
-            <div class="card-header">{{ __(' Table') }}</div>
+            <div class="card-header">{{ __('ALL MATERIALS') }}</div>
             <div class="card-body">                
                 <table class="mt-4" width="100%" style="font-size: 15px;">
                     <thead style="background-color: rgb(0, 94, 182); color:#fff;">
                         <tr>
                             <th>Id</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Adress</th>
-                            <th>Created At</th>
+                            <th>Name</th>                                                        
+                            <th>Category</th>
                             <th>Avalaible</th>
                             <th>Order</th>
                         </tr>
                     </thead>
                     <tbody>  
-                        @foreach ($users as $user)                      
+                        @foreach ($woods as $wood)                      
                         <tr>             
-                            <td>{{ $user->id }}</td>
-                            <td><a href={{ route('profile', $user->id ) }}>{{ $user->name }}</a></td>
-                            <td>{{ $user->email }}</td>
-                            <td>3 Rue tartampion</td>
-                            <td>{{ $user->created_at }}</td>
+                            <td>{{ $wood->id }}</td>
+                            <td><a href={{ route('profile', $wood->id ) }}>{{ $wood->name }}</a></td>                         
+                            
+                            <td>Wood</td>
+                            <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
+                            <td>💲0</td>
+                        </tr>
+                        @endforeach
+                        @foreach ($steels as $steel)                      
+                        <tr>             
+                            <td>{{ $steel->id }}</td>
+                            <td><a href={{ route('profile', $steel->id ) }}>{{ $steel->name }}</a></td>                            
+                            
+                            <td>Steel</td>
                             <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
                             <td>💲0</td>
                         </tr>
