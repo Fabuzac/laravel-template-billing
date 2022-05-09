@@ -1,15 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<div class="row m-0">
-    <div class="col-2 bg-aside-menu">
-        <ul style="font-size: 20px;" class="text-decoration-none mt-4">
-            <li><a href="#">👤 User profile</a></li>
-            <li><a href="#">👜 Orders</a></li>
-            <li><a href="#">📊 Monitoring</a></li>
-            <li><a href="#">♻️ Recycling</a></li>
-            <li><a href={{ route('materials.index') }}>Materials</a></li>
-        </ul>
-    </div>
+<div class="row m-0">    
+    @include('components.asidebar')
     <div class="col-9 mt-5">
         <div class="card">
             <div class="card-header">{{ __('Users Table') }}</div>
