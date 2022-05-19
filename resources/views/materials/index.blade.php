@@ -24,7 +24,7 @@
                             @foreach ($woods as $wood)                      
                             <tr>             
                                 <td>{{ $wood->id }}</td>
-                                <td><a href={{ route('users.show', $wood->id ) }}>{{ $wood->name }}</a></td>       
+                                <td><a href={{ route('wood.show', $wood->id ) }}>{{ $wood->name }}</a></td>       
                                 <td>Wood</td>
                                 <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
                                 <td>💲0</td>
@@ -33,7 +33,7 @@
                             @foreach ($steels as $steel)                      
                             <tr>             
                                 <td>{{ $steel->id }}</td>
-                                <td><a href={{ route('users.show', $steel->id ) }}>{{ $steel->name }}</a></td>      
+                                <td><a href={{ route('steel.show', $steel->id ) }}>{{ $steel->name }}</a></td>      
                                 <td>Steel</td>
                                 <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
                                 <td>💲0</td>
