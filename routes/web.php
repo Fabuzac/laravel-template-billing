@@ -26,9 +26,5 @@ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/{user}', [UserController::class, 'show'])->name('users.show');
 
 Route::get('/materials', [MaterialsController::class, 'index'])->name('materials.index');
-
-Route::get('/materials/wood', [WoodController::class, 'index'])->name('wood.index');
 Route::get('/materials/wood/{wood}', [WoodController::class, 'show'])->name('wood.show');
-
-Route::get('/materials/steel', [SteelController::class, 'index'])->name('steel.index');
 Route::get('/materials/steel/{steel}', [SteelController::class, 'show'])->name('steel.show');
