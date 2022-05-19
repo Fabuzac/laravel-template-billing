@@ -1,7 +1,7 @@
 <div class="col-2 bg-aside-menu">
     <ul style="font-size: 20px;" class="text-decoration-none mt-4">
         <li>
-            <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> User profile</a>
+            <a href="{{ route('users.index') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> User profile</a>
         </li>
         <li>
             <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Orders</a>

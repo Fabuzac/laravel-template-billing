@@ -3,40 +3,70 @@
 <div class="row m-0">    
     @include('components.asidebar')
     <div class="col-9 mt-5">
+        <h1 class="text-center display-3 pb-4">HOME</h1>
+
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="card mb-3">
+            <h3 class="card-header">Card header</h3>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+            </svg>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            <div class="card-footer text-muted">
+              <p>2 days ago</p>
+            </div>
+        </div>
         <div class="card">
-            <div class="card-header">{{ __('Users Table') }}</div>
-            <div class="card-body">                
-                <table class="mt-4" width="100%" style="font-size: 15px;">
-                    <thead style="background-color: rgb(0, 94, 182); color:#fff;">
-                        <tr>
-                            <th>Id</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Adress</th>
-                            <th>Created At</th>
-                            <th>Avalaible</th>
-                            <th>Order</th>
-                        </tr>
-                    </thead>
-                    <tbody>  
-                        @foreach ($users as $user)                      
-                        <tr>             
-                            <td>{{ $user->id }}</td>
-                            <td><a href={{ route('profile', $user->id ) }}>{{ $user->name }}</a></td>
-                            <td>{{ $user->email }}</td>
-                            <td>3 Rue tartampion</td>
-                            <td>{{ $user->created_at }}</td>
-                            <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
-                            <td>💲0</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                    <tfoot>        
-                        <tr>
-                            <td colspan="3"></td>                            
-                        </tr>        
-                    </tfoot>
-                </table>                
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
             </div>
         </div>
     </div>    

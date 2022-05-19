@@ -11,14 +11,14 @@ class UserController extends Controller
     {
         $users = User::all();
 
-        return view('/home', [
+        return view('/users.index', [
             'users' => $users
         ]);
     }
 
     public function show(User $user)
     {
-        return view('profile', [
+        return view('users.show', [
             'user' => $user,
         ]);
     }

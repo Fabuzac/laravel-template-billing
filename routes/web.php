@@ -20,8 +20,10 @@ use App\Http\Controllers\SteelController;
 */
 Auth::routes();
 
-Route::get('/', [UserController::class, 'index'])->name('home');
-Route::get('/profile/{user}', [UserController::class, 'show'])->name('profile');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::get('/users/{user}', [UserController::class, 'show'])->name('users.show');
 
 Route::get('/materials', [MaterialsController::class, 'index'])->name('materials.index');
 
