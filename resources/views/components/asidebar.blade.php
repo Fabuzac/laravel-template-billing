@@ -7,7 +7,7 @@
             <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Orders</a>
         </li>
         <li>
-            <a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> Monitoring</a>
+            <a href="{{ route('monitoring') }}"><i class="fa fa-heartbeat" aria-hidden="true"></i> Monitoring</a>
         </li>
         <li>
             <a href="#"><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i> Recycling</a>
