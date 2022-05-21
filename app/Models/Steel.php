@@ -15,5 +15,6 @@ class Steel extends Model
         'name',
         'quantity',
         'supplier',
+        'category',
     ];
 }

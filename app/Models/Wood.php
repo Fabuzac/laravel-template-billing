@@ -15,5 +15,6 @@ class Wood extends Model
         'name',
         'quantity',
         'supplier',
+        'category',
     ];
 }

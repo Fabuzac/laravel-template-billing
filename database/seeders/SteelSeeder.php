@@ -22,6 +22,7 @@ class SteelSeeder extends Seeder
                 'name' => $faker->word(),
                 'quantity' => $faker->randomFloat($nbMaxDecimals = 2, $min=10, $max = 100),
                 'supplier' => $faker->word(),       
+                'category' => 'steel',    
             ]);
         }
     }

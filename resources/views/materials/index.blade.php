@@ -10,7 +10,7 @@
             <h2>ALL MATERIALS</h2>
             <div class="card">                
                 <div class="card-body">                
-                    <table class="mt-4" width="100%" style="font-size: 15px;">
+                    <table class="mt-4 text-capitalize" width="100%" style="font-size: 15px;">
                         <thead style="background-color: rgb(0, 94, 182); color:#fff;">
                             <tr>
                                 <th>Id</th>
@@ -25,7 +25,7 @@
                             <tr>             
                                 <td>{{ $wood->id }}</td>
                                 <td><a href={{ route('wood.show', $wood->id ) }}>{{ $wood->name }}</a></td>       
-                                <td>Wood</td>
+                                <td>{{ $wood->category }}</td>
                                 <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
                                 <td>💲0</td>
                             </tr>
@@ -34,7 +34,7 @@
                             <tr>             
                                 <td>{{ $steel->id }}</td>
                                 <td><a href={{ route('steel.show', $steel->id ) }}>{{ $steel->name }}</a></td>      
-                                <td>Steel</td>
+                                <td>{{ $steel->category }}</td>
                                 <td><i style="color:rgb(16, 255, 68);" class="fa fa-check"></i></td>
                                 <td>💲0</td>
                             </tr>

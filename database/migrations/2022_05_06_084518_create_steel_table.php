@@ -18,6 +18,7 @@ class CreateSteelTable extends Migration
             $table->string('name');
             $table->string('quantity');
             $table->string('supplier');
+            $table->string('category');
             $table->timestamps();
         });
     }

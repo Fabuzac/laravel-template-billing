@@ -21,7 +21,8 @@ class WoodSeeder extends Seeder
             Wood::create([
                 'name' => $faker->word(),
                 'quantity' => $faker->randomFloat($nbMaxDecimals = 2, $min=10, $max = 100),
-                'supplier' => $faker->word(),       
+                'supplier' => $faker->word(),    
+                'category' => 'wood',
             ]);
         }
     }
